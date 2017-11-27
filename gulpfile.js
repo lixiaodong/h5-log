@@ -11,12 +11,7 @@ var cssmin = require('gulp-cssmin');
 
 var pkg = require("./package.json");
 
-var banner = 
-"/** \n\
-* jQuery mgui V" + pkg.version + " \n\
-* By 蘑菇云前端团队\n\
-* http://lihongxun945.github.io/jquery-mgui/\n \
-*/\n";
+var banner = "";
 
 gulp.task('js', function(cb) {
 
