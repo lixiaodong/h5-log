@@ -1,9 +1,10 @@
-## The Source Of Inspiration
+#### 前言
 
-Sometimes,We need to debug javascript in App's WebView.
+    
+### 已开发的功能列表
 
-There is many trouble to debug on WebView,especially https protocol
-
+    1.支持手机端查看日志
+    2.支持刷新App内嵌页面刷新当前页
 
 ### 待开发的功能列表
 
@@ -18,4 +19,5 @@ There is many trouble to debug on WebView,especially https protocol
     5.脚本输入框
 
     6.打开图片链接
+
 
