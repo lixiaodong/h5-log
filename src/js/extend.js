@@ -15,5 +15,10 @@ window.onerror = function(errorMessage, scriptURI, lineNumber,columnNumber,error
     H5Log.log("错误详情：" + errorObj);
     H5Log.btnH5LogWarning();
 }
+
+//重写console方法
 var console = {};
 console.log = H5Log.log;
+console.warn = H5Log.warn;
+console.info = H5Log.info;
+console.error = H5Log.error;

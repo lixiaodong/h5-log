@@ -21,8 +21,8 @@ gulp.task('js', function(cb) {
     if(count >= 3) cb();
   };
   gulp.src([
-    './src/js/extend.js',
     './src/js/main.js',
+    './src/js/extend.js',
 
   ])
     .pipe(concat({ path: 'h5-log.js'}))
