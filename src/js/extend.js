@@ -22,3 +22,31 @@ console.log = H5Log.log;
 console.warn = H5Log.warn;
 console.info = H5Log.info;
 console.error = H5Log.error;
+
+
+window.$ = function (selector) {
+
+    var ele = document.querySelectorAll(selector);
+    this.ele = ele;
+
+    this.html = function (html) {
+        var ele = this;
+        console.log(ele.length);
+        if(html){
+            ele.innerHTML = html;
+        }else{
+            return ele.outerHTML;
+        }
+    }
+
+    return this;
+}
+window.$.prototype.html = function (html) {
+    var ele = this;
+    console.log(ele.length);
+    if(html){
+        ele.innerHTML = html;
+    }else{
+        return ele.innerHTML;
+    }
+}
