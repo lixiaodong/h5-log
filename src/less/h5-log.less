@@ -1,6 +1,25 @@
 @import "common/theme";
 @import "common/animation";
 
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
+  &::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
+}
 .h5-log-refresh {
   position: fixed;
   z-index: 9999;

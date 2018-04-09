@@ -8,12 +8,18 @@
 window.onerror = function(errorMessage, scriptURI, lineNumber,columnNumber,errorObj) {
 
 
-    H5Log.log("错误信息：" +errorMessage);
-    H5Log.log("出错文件：" + scriptURI);
-    H5Log.log("出错行号：" + lineNumber);
-    H5Log.log("出错列号：" + columnNumber);
-    H5Log.log("错误详情：" + errorObj);
-    H5Log.btnH5LogWarning();
+    try{
+
+        H5Log.log("错误信息：" +errorMessage);
+        H5Log.log("出错文件：" + scriptURI);
+        H5Log.log("出错行号：" + lineNumber);
+        H5Log.log("出错列号：" + columnNumber);
+        H5Log.log("错误详情：" + errorObj);
+        H5Log.btnH5LogWarning();
+    }catch (e){
+        alert(e.message);
+    }
+    return false;
 }
 
 //重写console方法

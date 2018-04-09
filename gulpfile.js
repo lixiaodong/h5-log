@@ -15,7 +15,7 @@ var banner = "";
 
 gulp.task('js', function(cb) {
 
-  count = 0;
+  var count = 0;
   var end = function(){
     count ++;
     if(count >= 3) cb();
@@ -23,7 +23,6 @@ gulp.task('js', function(cb) {
   gulp.src([
     './src/js/main.js',
     './src/js/extend.js',
-
   ])
     .pipe(concat({ path: 'h5-log.js'}))
     .pipe(header(banner))
